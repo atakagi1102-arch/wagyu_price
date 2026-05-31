@@ -23,11 +23,22 @@ p {
 
 .result {
   padding: 60px 20px 20px;
+    display: flex;
+  flex-wrap: wrap;
 }
 
 .result a {
   color: #343a40;
+} 
+
+
+.card-deck.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
 }
+
 
 @media screen and (min-width:576px) {
   .row {
